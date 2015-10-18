@@ -5,3 +5,5 @@ elpa/
 places
 projectile.cache
 tramp
+.recentf
+ido.last
