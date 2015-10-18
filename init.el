@@ -31,6 +31,7 @@
     ack-and-a-half
     ;; Misc.
     json-mode
+    yaml-mode
     sass-mode
     markdown-mode
     color-theme-sanityinc-tomorrow
@@ -151,7 +152,8 @@
   (interactive)
   (whitespace-cleanup)
   (untabify (point-min) (point-max))
-  (indent-region (point-min) (point-max)))
+  ;;  (indent-region (point-min) (point-max))
+  )
 
 (add-hook 'before-save-hook 'cleanup-buffer)
 
@@ -271,3 +273,10 @@
             (define-key ido-completion-map [up] 'ido-prev-match)
             (define-key ido-completion-map (kbd "C-n") 'ido-next-match)
             (define-key ido-completion-map (kbd "C-p") 'ido-prev-match)))
+
+(add-hook 'focus-out-hook
+          (lambda ()
+            (cl-letf (((symbol-function 'message) #'format))
+              (save-some-buffers t))))
+
+

@@ -179,3 +179,6 @@ middle"
 (global-set-key [s-S-right] 'win-resize-minimize-horiz)
 (global-set-key [s-S-up] 'win-resize-enlarge-vert)
 (global-set-key [s-S-down] 'win-resize-minimize-vert)
+
+;; magit
+(global-set-key (kbd "C-x g") 'magit-status)
