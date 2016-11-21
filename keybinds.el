@@ -3,6 +3,7 @@
 
 (global-set-key [f8] 'cider-connect)
 (global-set-key [M-f8] 'cider-quit)
+(global-set-key [f5] 'cider-jack-in)
 
 (global-set-key [f11] (lambda () (interactive) (find-file "~/.lein/profiles.clj")))
 (global-set-key [f12] (lambda () (interactive) (find-file "~/.emacs.d/init.el")))

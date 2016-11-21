@@ -1,9 +1,12 @@
 .smex-items
 auto-save-list/
+snippets/
 backups/
 elpa/
 places
+projectile-bookmarks.eld
 projectile.cache
 tramp
+recentf
 .recentf
 ido.last

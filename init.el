@@ -42,7 +42,8 @@
     highlight
     git-link
     expand-region
-    avy)
+    avy
+    twittering-mode)
   "A list of packages to ensure are installed at launch.")
 
 ;; Automaticaly install any missing packages
@@ -136,17 +137,7 @@
 (setq-default whitespace-line-column 90)
 
 (require 'cider)
-(setq cider-known-endpoints '(("nr-t1" "9980")
-                              ("nr-t2" "9981")
-                              ("nr-t3" "9982")
-                              ("nr-t4" "9983")
-                              ("nr-db2" "9995")
-                              ("nr-web1" "9996")
-                              ("nr-web2" "9997")
-                              ("nr-hex" "7888")
-                              ("nr-hs" "7888")
-                              ("nr-bcc" "9991")
-                              ("nr-c2" "9991")))
+(setq cider-known-endpoints '(("localhost" "7888")))
 
 (defun cleanup-buffer ()
   (interactive)
@@ -280,3 +271,5 @@
               (save-some-buffers t))))
 
 
+(put 'erase-buffer 'disabled nil)
+(put 'scroll-left 'disabled nil)
