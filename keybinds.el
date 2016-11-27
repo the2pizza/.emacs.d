@@ -26,6 +26,8 @@
                 (lambda () (interactive)
                   (find-project-file "project.clj")))
 
+;; hotkeys for expand
+
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 ;; hide/show
