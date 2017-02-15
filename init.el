@@ -30,6 +30,7 @@
     projectile
     ack-and-a-half
     ;; Misc.
+    terraform-mode
     json-mode
     yaml-mode
     sass-mode
@@ -77,11 +78,17 @@
  '(cider-buffer-name-show-port t)
  '(cljr-favor-prefix-notation nil)
  '(cljr-favor-private-functions nil)
+ '(custom-safe-themes
+   (quote
+    ("06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" default)))
  '(delete-selection-mode t)
  '(fci-rule-color "#393939")
  '(git-link-open-in-browser t t)
  '(magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient")
  '(nrepl-host "localhost")
+ '(package-selected-packages
+   (quote
+    (yaml-mode twittering-mode swiper starter-kit-lisp starter-kit-bindings sass-mode rainbow-delimiters projectile powerline popup paxedit markdown-mode mac-key-mode json-mode git-link expand-region company color-theme-sanityinc-tomorrow color-identifiers-mode clojure-snippets clj-refactor cider-eval-sexp-fu buffer-move avy align-cljlet ack-and-a-half)))
  '(projectile-use-git-grep t)
  '(show-paren-delay 0)
  '(show-paren-mode t)
