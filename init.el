@@ -13,6 +13,8 @@
   '(starter-kit
     starter-kit-bindings
     starter-kit-lisp
+    org
+    org-jira
     ;; Clojure & friends
     clojure-mode
     clojure-snippets
@@ -71,7 +73,7 @@
  '(ansi-color-faces-vector
    [default bold shadow italic underline bold bold-italic bold])
  '(ansi-color-names-vector
-   (vector "#cccccc" "#f2777a" "#99cc99" "#ffcc66" "#6699cc" "#cc99cc" "#66cccc" "#2d2d2d"))
+   (vector "#c5c8c6" "#cc6666" "#b5bd68" "#f0c674" "#81a2be" "#b294bb" "#8abeb7" "#373b41"))
  '(auto-save-default nil)
  '(backup-inhibited t t)
  '(blink-matching-paren nil)
@@ -82,37 +84,38 @@
    (quote
     ("06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" default)))
  '(delete-selection-mode t)
- '(fci-rule-color "#393939")
+ '(fci-rule-color "#373b41")
  '(git-link-open-in-browser t t)
  '(magit-emacsclient-executable "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient")
  '(nrepl-host "localhost")
+ '(org-agenda-files (quote ("~/Code/epam/org/main.org")))
  '(package-selected-packages
    (quote
-    (yaml-mode twittering-mode swiper starter-kit-lisp starter-kit-bindings sass-mode rainbow-delimiters projectile powerline popup paxedit markdown-mode mac-key-mode json-mode git-link expand-region company color-theme-sanityinc-tomorrow color-identifiers-mode clojure-snippets clj-refactor cider-eval-sexp-fu buffer-move avy align-cljlet ack-and-a-half)))
+    (org-jira yaml-mode twittering-mode swiper starter-kit-lisp starter-kit-bindings sass-mode rainbow-delimiters projectile powerline popup paxedit markdown-mode mac-key-mode json-mode git-link expand-region company color-theme-sanityinc-tomorrow color-identifiers-mode clojure-snippets clj-refactor cider-eval-sexp-fu buffer-move avy align-cljlet ack-and-a-half)))
  '(projectile-use-git-grep t)
  '(show-paren-delay 0)
  '(show-paren-mode t)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
-    ((20 . "#f2777a")
-     (40 . "#f99157")
-     (60 . "#ffcc66")
-     (80 . "#99cc99")
-     (100 . "#66cccc")
-     (120 . "#6699cc")
-     (140 . "#cc99cc")
-     (160 . "#f2777a")
-     (180 . "#f99157")
-     (200 . "#ffcc66")
-     (220 . "#99cc99")
-     (240 . "#66cccc")
-     (260 . "#6699cc")
-     (280 . "#cc99cc")
-     (300 . "#f2777a")
-     (320 . "#f99157")
-     (340 . "#ffcc66")
-     (360 . "#99cc99"))))
+    ((20 . "#cc6666")
+     (40 . "#de935f")
+     (60 . "#f0c674")
+     (80 . "#b5bd68")
+     (100 . "#8abeb7")
+     (120 . "#81a2be")
+     (140 . "#b294bb")
+     (160 . "#cc6666")
+     (180 . "#de935f")
+     (200 . "#f0c674")
+     (220 . "#b5bd68")
+     (240 . "#8abeb7")
+     (260 . "#81a2be")
+     (280 . "#b294bb")
+     (300 . "#cc6666")
+     (320 . "#de935f")
+     (340 . "#f0c674")
+     (360 . "#b5bd68"))))
  '(vc-annotate-very-old-color nil))
 
 (split-window-right)
@@ -280,3 +283,7 @@
 
 (put 'erase-buffer 'disabled nil)
 (put 'scroll-left 'disabled nil)
+
+                                        ; Jira integration
+
+(setq jiralib-url "https://jiraeu.epam.com")

@@ -82,3 +82,8 @@
 
 ;; magit
 (global-set-key (kbd "C-x g") 'magit-status)
+
+
+(eval-after-load "org"
+  '(progn
+     (define-key org-mode-map (kbd "C-c n") 'org-insert-todo-heading) ))
